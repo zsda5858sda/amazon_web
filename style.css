@@ -319,10 +319,10 @@ i {
     display: flex;
 }
 .second span{
-    font-size: 15px;
+    font-size: 14px;
 }
 .second li{
-    padding: 5px 10px;
+    padding: 5px 5px;
     font-size: 15px;
     margin: 7px 0;
     cursor: pointer;
@@ -331,8 +331,7 @@ i {
 }
 .second-1{
     height: 70%;
-    width: 60%;
-    flex: 1;
+    flex: 0.5%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -346,13 +345,16 @@ i {
     display: flex;
     justify-content: center;
 }
+.second-1 div i{
+    margin-top: 8px;
+}
 .second-1 div span{
     margin-left: 5px;
     cursor: pointer;
 }
 .second-2{
-    flex: 50;
-    display: flex;
+    margin-left: 65px;
+    position: absolute;
     overflow: hidden;
 }
 .second-1:hover{
