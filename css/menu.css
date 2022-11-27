@@ -52,7 +52,11 @@
     position: absolute;
     overflow: hidden;
 }
-.second-1:hover{
+#menu-icon{
+    padding: 5px 0px;
+    border: 1px solid transparent;
+}
+#menu-icon:hover{
     border: 1px solid white;
 }
 .second-2 li:hover{
