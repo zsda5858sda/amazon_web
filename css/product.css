@@ -38,7 +38,7 @@
 
 .box-a{
     font-size: 13px;
-    display:hidden;
+    display:inline-block;
     overflow:hidden;
     background-color: white;
 }

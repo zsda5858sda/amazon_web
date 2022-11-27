@@ -79,7 +79,6 @@ i {
     font-size: 12px;
     line-height: 14px;
     font-weight: 400;
-    font-family: Arial, sans-serif;
     white-space: nowrap;
     display: inline-block;
     height: 39px;
@@ -92,7 +91,6 @@ i {
     padding-bottom: 1px;
     line-height: 15px;
     font-weight: 700;
-    font-family: Arial, sans-serif;
     white-space: nowrap;
     display: inline-block;
     text-size-adjust: 100%;
@@ -108,7 +106,6 @@ i {
 .input {
     justify-content: space-between;
     background-color: white;
-    font-family: Arial, sans-serif;
     flex: 0.65;
     height: 42px;
     border-radius: 5px;
@@ -225,13 +222,11 @@ i {
 }
 
 .ca {
-    font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
 }
 
 .ac {
-    font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
 }
@@ -257,7 +252,6 @@ i {
 .lang p {
     margin-top: 5px;
     color: white;
-    font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
 }
