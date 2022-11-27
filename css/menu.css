@@ -1,13 +1,11 @@
-
 .second{
     width: 100%;
     height: 39px;
-    background-color: #232f3e;
+    background-color: #182138;
     display: flex;
     align-items: center;
     color: white;
     overflow: hidden;
-    font-family: Arial, sans-serif;
 }
 .second ul{
     justify-content: flex-start;
@@ -50,11 +48,15 @@
     cursor: pointer;
 }
 .second-2{
-    margin-left: 65px;
+    margin-left: 72px;
     position: absolute;
     overflow: hidden;
 }
-.second-1:hover{
+#menu-icon{
+    padding: 5px 0px;
+    border: 1px solid transparent;
+}
+#menu-icon:hover{
     border: 1px solid white;
 }
 .second-2 li:hover{

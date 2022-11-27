@@ -12,7 +12,6 @@
     width: 118px;
     height: 85%;
     margin: 0 10px;
-    margin-top: 0.5px;
     padding: 5px 10px;
     border: 1px solid transparent;
     border-radius: 3px;
@@ -47,8 +46,9 @@ i {
 }
 
 .map i {
-    margin-top: 17px;
-    font-size: 17px;
+    margin-left: 3px;
+    margin-top: 14px;
+    font-size: 16px;
 }
 
 .map div {
@@ -68,9 +68,10 @@ i {
 }
 
 #nav-text {
-    margin-left: -2px;
+    padding:2px;
+    margin:2px;
     width: 60px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #nav-line1 {
@@ -78,7 +79,6 @@ i {
     font-size: 12px;
     line-height: 14px;
     font-weight: 400;
-    font-family: Arial, sans-serif;
     white-space: nowrap;
     display: inline-block;
     height: 39px;
@@ -87,11 +87,10 @@ i {
 #nav-line2 {
     box-sizing: border-box;
     clear: both;
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 1px;
     line-height: 15px;
     font-weight: 700;
-    font-family: Arial, sans-serif;
     white-space: nowrap;
     display: inline-block;
     text-size-adjust: 100%;
@@ -107,7 +106,6 @@ i {
 .input {
     justify-content: space-between;
     background-color: white;
-    font-family: Arial, sans-serif;
     flex: 0.65;
     height: 42px;
     border-radius: 5px;
@@ -224,13 +222,11 @@ i {
 }
 
 .ca {
-    font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
 }
 
 .ac {
-    font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
 }
@@ -256,7 +252,6 @@ i {
 .lang p {
     margin-top: 5px;
     color: white;
-    font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
 }
