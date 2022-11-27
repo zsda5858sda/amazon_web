@@ -1,17 +1,17 @@
 .main{
     position: relative;
-    top: -330px;
+    top: -320px;
 }
 
 .card-product-container{
-    padding: 20px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
 }
 
 .card-product-nested-card{
     display: flex;
-    max-width: 300px;
+    max-width: 305px;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -31,18 +31,20 @@
 .card-product{
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 305px;
+    min-height: 430px;
     margin-left: 10px;
     background-color: white;
 }
 
-.card-product h2{
+.card-product h3{
+    margin-top: 10px;
     margin-left: 10px;
     padding: 5px;
 }
 
 .card-product-btn{
-    font-size: 14px;
+    font-size: 13px;
     align-self: flex-start;
     margin-top: 25px;
     margin-left: 15px;
@@ -51,4 +53,6 @@
     border: none;
     cursor: pointer;
     color: #007185;
+    position: absolute;
+    bottom: 40;
 }
