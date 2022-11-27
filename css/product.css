@@ -1,65 +1,47 @@
- .container-1{
-    position:absolute;
-    z-index: 1;
-    top: 210px;
-    left: 0;
-    width: 100%;
+.main{
+    position: relative;
+    top: -330px;
+}
+.card-product-container{
     padding: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(to bottom, transparent ,#eaeded 30%);
+    justify-content: space-between;
 }
-.container-1 div:first-child{
-    font-size: 14px;
-    padding: 12px 0;
-}
-.product-comp{
-    max-width: 100%;
-    max-height: 100%;
+.card-product-nested-card{
     display: flex;
-    box-sizing: border-box;
-    margin: 20px 0;
-    justify-content: space-around;
+    max-width: 300px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.product-comp .box{
-    width: 315px;
-    height: 400px;
-    background-color: white;
+.card-nested img{
+    width: 128px;
+    height: 102px;
+    object-fit: contain;
 }
-
-.box h3{
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 20px;
+.card-nested p{
+    font-size: 12px;
+    margin-top: -5px;
     margin-bottom: 10px;
-    color: rgb(43,42,42);
 }
-
-.box-a{
-    font-size: 13px;
-    display:inline-block;
-    overflow:hidden;
+.card-product{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-left: 10px;
     background-color: white;
 }
-.box div img{
-    width: 140px;
-    height: 100px;
-    margin-left: 20;
+.card-product h2{
+    margin-left: 10px;
+    padding: 5px;
+}
+.card-product-btn{
+    font-size: 14px;
+    align-self: flex-start;
+    margin-top: 25px;
+    margin-left: 15px;
+    padding-left: 0;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
-    padding-left: -20px;
-    margin-right: 0;
+    color: #007185;
 }
-
-.box-a div{
-    max-width: 200px;
-    max-height: 300px;
-    display:block;
-}
-
-.box-a div span{
-    display: block;
-    font-size: 13px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-} 

@@ -29,7 +29,7 @@
     position: absolute;
     animation: carousel 15s alternate infinite;
 }
-
+/* todo:slider fix button and animation to right only */
 @keyframes carousel {
     0% {
         left: 0;
