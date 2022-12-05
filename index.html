@@ -13,73 +13,79 @@
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/product.css">
     <script src="https://kit.fontawesome.com/be1d35bdaa.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/listener.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="first">
-            <div class="flex logo">
-                <a href="#"><img src="images/logo.png" alt="logo"></a>
-                <div id="map" class="map flex">
-                    <i class="fa-solid fa-location-dot" id="location-dot"></i>
-                    <div id="nav-text">
-                        <span id="nav-line1">
-                            Deliver to<br><span id="nav-line2">Taiwan</span>
-                        </span>
+    <header id="navbar-main" class="nav-flex">
+        <div class="nav-flex header">
+            <div class="first">
+                <div class="flex logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                    <div id="map" class="map flex">
+                        <i class="fa-solid fa-location-dot" id="location-dot"></i>
+                        <div id="nav-text">
+                            <span id="nav-line1">
+                                Deliver to<br><span id="nav-line2">Taiwan</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex input">
-                <div>
-                    <span>All</span>
-                    <i class="fas fa-caret-down"></i>
-                </div>
-                <input type="text">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="flex right">
-                <div class="flex lang">
-                    <img src="images/usflag.jpg">
-                    <p>EN</p>
-                    <i class="fas fa-caret-down"></i>
-                </div>
-                <div class="sign">
-                    <span>Hello, sign in</span>
-                    <div class="flex ac">
-                        <span><b>Account & Lists</b></span>
+                <div class="flex input">
+                    <div>
+                        <span>All</span>
                         <i class="fas fa-caret-down"></i>
                     </div>
+                    <input type="text" id="searchtextbox" onclick="clickSearchBar()">
+                    <i class="fas fa-search"></i>
                 </div>
-                <div class="sign">
-                    <span>Returns</span>
-                    <span>& Orders</span>
+                <div class="flex right">
+                    <div class="flex lang">
+                        <img src="images/usflag.jpg">
+                        <p>EN</p>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div class="sign">
+                        <span>Hello, sign in</span>
+                        <div class="flex ac">
+                            <span><b>Account & Lists</b></span>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="sign">
+                        <span>Returns</span>
+                        <span>& Orders</span>
+                    </div>
+                    <div class="flex cart" id="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p style="margin-right:22px; margin-top:-1px;">0</p>
+                        <span class="ca">Cart</span>
+                    </div>
                 </div>
-                <div class="flex cart" id="cart">
-                    <i class="fas fa-shopping-cart"></i>
-                    <p style="margin-right:22px; margin-top:-1px;">0</p>
-                    <span class="ca">Cart</span>
+            </div>
+            <div class="second">
+                <div class="second-1">
+                    <div id="menu-icon">
+                        <i class="fas fa-bars fa-xl"></i>
+                        <span><b>All</b></span>
+                    </div>
+                </div>
+                <div class="second-2">
+                    <ul>
+                        <li>Today's Deals</li>
+                        <li>Customer Service</li>
+                        <li>Registry</li>
+                        <li>Gift Cards</li>
+                        <li>Sell</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="second">
-            <div class="second-1">
-                <div id="menu-icon">
-                    <i class="fas fa-bars fa-xl"></i>
-                    <span><b>All</b></span>
-                </div>
-            </div>
-            <div class="second-2">
-                <ul>
-                    <li>Today's Deals</li>
-                    <li>Customer Service</li>
-                    <li>Registry</li>
-                    <li>Gift Cards</li>
-                    <li>Sell</li>
-                </ul>
-            </div>
-        </div>
+        <div id="nav-cover" class="page-cover" onclick="clickPage()"></div>
     </header>
-    <div class="slider">
+    <div class="slider" id="pageContent">
         <div class="image-box">
             <div class="slide">
                 <img src="https://m.media-amazon.com/images/I/71tIrZqybrL._SX3000_.jpg">
