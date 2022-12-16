@@ -1,7 +1,6 @@
 var isCover = false;
 
-function clickSearchBar() {
-    console.log(isCover);
+function showNavCover() {
     if (!isCover) {
         var element = document.getElementById("nav-cover");
         unfade(element);
@@ -9,8 +8,7 @@ function clickSearchBar() {
     }
 }
 
-function clickPage() {
-    console.log(isCover);
+function hideNavCover() {
     if (isCover) {
         var element = document.getElementById("nav-cover");
         fade(element);

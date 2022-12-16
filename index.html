@@ -38,27 +38,27 @@
                         <span>All</span>
                         <i class="fas fa-caret-down"></i>
                     </div>
-                    <input type="text" id="searchtextbox" onclick="clickSearchBar()">
+                    <input type="text" id="searchtextbox" onclick="showNavCover()">
                     <i class="fas fa-search"></i>
                 </div>
-                <div class="flex right">
-                    <div class="flex lang">
+                <div class="flex right" onmouseleave="hideNavCover()">
+                    <div class="flex lang" onmouseenter="showNavCover()">
                         <img src="images/usflag.jpg">
                         <p>EN</p>
                         <i class="fas fa-caret-down"></i>
                     </div>
-                    <div class="sign">
+                    <div class="sign" onmouseenter="showNavCover()">
                         <span>Hello, sign in</span>
                         <div class="flex ac">
                             <span><b>Account & Lists</b></span>
                             <i class="fas fa-caret-down"></i>
                         </div>
                     </div>
-                    <div class="sign">
+                    <div class="sign" onmouseenter="hideNavCover()">
                         <span>Returns</span>
                         <span>& Orders</span>
                     </div>
-                    <div class="flex cart" id="cart">
+                    <div class="flex cart" id="cart" onmouseenter="hideNavCover()">
                         <i class="fas fa-shopping-cart"></i>
                         <p style="margin-right:22px; margin-top:-1px;">0</p>
                         <span class="ca">Cart</span>
@@ -83,7 +83,79 @@
                 </div>
             </div>
         </div>
-        <div id="nav-cover" class="page-cover" onclick="clickPage()"></div>
+        <div id="nav-flyout-icp" class="nav-coreFlyout nav-flyout" style="position: absolute; top: -5px;">
+            <div class="nav-arrow" style="position: absolute; left: 53.375px;">
+                <div class="nav-arrow-inner"></div>
+            </div>
+            <div class="nav-template nav-flyout-content nav-tpl-itemList">
+                <span class="                                    nav-item">
+                    <span class="nav-text">Change language <a
+                            href="/hz/cs/help?ref_=icp_language_help&amp;nodeId=202085910"
+                            class="icp-flyout-learn-more">Learn more</a>
+                    </span>
+                </span>
+                <span class="                                    nav-item">
+                    <span class="nav-text">
+                        <i class="icp-radio icp-radio-active"></i>
+                        <span style="unicode-bidi:isolate; direction:ltr;" dir="ltr">English</span> - <span
+                            style="unicode-bidi:isolate; direction:ltr;" dir="ltr">EN</span></span> </span>
+                <div class="nav-divider"></div>
+                <a href="#switch-lang=es_US" class="nav-link                                    nav-item">
+                    <span class="nav-text"><i class="icp-radio"></i><span style="unicode-bidi:isolate; direction:ltr;"
+                            dir="ltr">español</span> - <span style="unicode-bidi:isolate; direction:ltr;"
+                            dir="ltr">ES</span></span> </a> <a href="#switch-lang=ar_AE"
+                    class="nav-link                                    nav-item"> <span class="nav-text"><i
+                            class="icp-radio"></i><span style="unicode-bidi:isolate; direction:rtl;"
+                            dir="rtl">العربية</span> - <span style="unicode-bidi:isolate; direction:ltr;"
+                            dir="ltr">AR</span></span> </a> <a href="#switch-lang=de_DE"
+                    class="nav-link                                    nav-item"> <span class="nav-text"><i
+                            class="icp-radio"></i><span style="unicode-bidi:isolate; direction:ltr;"
+                            dir="ltr">Deutsch</span> - <span style="unicode-bidi:isolate; direction:ltr;"
+                            dir="ltr">DE</span></span> </a> <a href="#switch-lang=he_IL"
+                    class="nav-link                                    nav-item"> <span class="nav-text"><i
+                            class="icp-radio"></i><span style="unicode-bidi:isolate; direction:rtl;"
+                            dir="rtl">עברית</span> - <span style="unicode-bidi:isolate; direction:ltr;"
+                            dir="ltr">HE</span></span> </a> <a href="#switch-lang=ko_KR"
+                    class="nav-link                                    nav-item"> <span class="nav-text"><i
+                            class="icp-radio"></i><span style="unicode-bidi:isolate; direction:ltr;"
+                            dir="ltr">한국어</span> - <span style="unicode-bidi:isolate; direction:ltr;"
+                            dir="ltr">KO</span></span> </a> <a href="#switch-lang=pt_BR"
+                    class="nav-link                                    nav-item"> <span class="nav-text"><i
+                            class="icp-radio"></i><span style="unicode-bidi:isolate; direction:ltr;"
+                            dir="ltr">português</span> - <span style="unicode-bidi:isolate; direction:ltr;"
+                            dir="ltr">PT</span></span> </a> <a href="#switch-lang=zh_CN"
+                    class="nav-link                                    nav-item"> <span class="nav-text"><i
+                            class="icp-radio"></i><span style="unicode-bidi:isolate; direction:ltr;" dir="ltr">中文
+                            (简体)</span> - <span style="unicode-bidi:isolate; direction:ltr;" dir="ltr">ZH</span></span>
+                </a> <a href="#switch-lang=zh_TW" class="nav-link                                    nav-item"> <span
+                        class="nav-text"><i class="icp-radio"></i><span style="unicode-bidi:isolate; direction:ltr;"
+                            dir="ltr">中文 (繁體)</span> - <span style="unicode-bidi:isolate; direction:ltr;"
+                            dir="ltr">ZH</span></span> </a>
+                <div class="nav-divider icp-flyout-curr-divider"></div> <span
+                    class="                                    nav-item"> <span class="nav-text">Change currency <a
+                            href="/hz/cs/help?ref_=icp_currency_help&amp;nodeId=GDX4RY8D2M85FHLD"
+                            class="icp-flyout-learn-more">Learn more</a></span> </span> <span
+                    class="                                    nav-item"> <span class="nav-text"><span><span
+                                style="unicode-bidi:isolate; direction:ltr;" dir="ltr">$</span> - <span
+                                style="unicode-bidi:isolate; direction:ltr;" dir="ltr">USD</span> - US Dollar</span><a
+                            href="/customer-preferences/edit?ref=icp_cop_flyout_change?preferencesReturnUrl=%2F%3Flanguage%3Den_US"
+                            class="icp-flyout-change">Change</a></span> </span>
+                <div class="nav-divider icp-flyout-curr-divider"></div> <span
+                    class="                                    nav-item"> <span class="nav-text">
+                        <img src="images/usflag.jpg" class="icp-flyout-flag icp-flyout-flag-us"></img>You are shopping on <span
+                            style="unicode-bidi:isolate; direction:ltr;" dir="ltr">Amazon.com</span></span> </span> <a
+                    href="/customer-preferences/country?ref_=icp_lop_mop_chg_ais&amp;preferencesReturnUrl=/"
+                    class="nav-link                                    nav-item" id="icp-flyout-mkt-change"> <span
+                        class="nav-text">
+                        <div class="icp-mkt-change-lnk">Change country/region.</div>
+                    </span> </a>
+            </div>
+            <div class="nav-flyout-buffer-left"></div>
+            <div class="nav-flyout-buffer-right"></div>
+            <div class="nav-flyout-buffer-top"></div>
+            <div class="nav-flyout-buffer-bottom"></div>
+        </div>
+        <div id="nav-cover" class="page-cover" onclick="hideNavCover()"></div>
     </header>
     <div class="slider" id="pageContent">
         <div class="image-box">
