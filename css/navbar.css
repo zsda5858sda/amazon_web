@@ -412,3 +412,35 @@ a, a:link, a:visited {
     margin-top: 10px;
     color: #0066C0;
 }
+
+.nav-flyout .nav-arrow {
+    margin-left: -1px;
+    border-style: solid;
+    _border-style: dashed;
+    border-width: 9px;
+    border-color: transparent;
+    border-top-width: 0;
+    border-bottom: 9px solid #ccc;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: -9px;
+}
+
+.nav-flyout .nav-arrow-inner {
+    border-style: solid;
+    _border-style: dashed;
+    border-width: 9px;
+    border-color: transparent;
+    border-top-width: 0;
+    border-bottom: 9px solid #fff;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 1px;
+    left: -9px;
+}

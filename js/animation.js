@@ -1,4 +1,4 @@
-function fade(element) {
+async function fade(element) {
     var op = .6;  // initial opacity
     var timer = setInterval(function () {
         if (op <= 0.1){

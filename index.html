@@ -15,7 +15,6 @@
     <script src="https://kit.fontawesome.com/be1d35bdaa.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script src="js/animation.js"></script>
-    <script src="js/listener.js"></script>
 </head>
 
 <body>
@@ -42,23 +41,23 @@
                     <i class="fas fa-search"></i>
                 </div>
                 <div class="flex right" onmouseleave="hideNavCover()">
-                    <div class="flex lang" onmouseenter="showNavCover()">
+                    <div class="flex lang" onmouseenter="showNavCover('lang')">
                         <img src="images/usflag.jpg">
                         <p>EN</p>
                         <i class="fas fa-caret-down"></i>
                     </div>
-                    <div class="sign" onmouseenter="showNavCover()">
+                    <div class="sign" onmouseenter="showNavCover('sign')">
                         <span>Hello, sign in</span>
                         <div class="flex ac">
                             <span><b>Account & Lists</b></span>
                             <i class="fas fa-caret-down"></i>
                         </div>
                     </div>
-                    <div class="sign" onmouseenter="hideNavCover()">
+                    <div class="sign" onmouseenter="hideNavCover('orders')">
                         <span>Returns</span>
                         <span>& Orders</span>
                     </div>
-                    <div class="flex cart" id="cart" onmouseenter="hideNavCover()">
+                    <div class="flex cart" id="cart" onmouseenter="hideNavCover('cart')">
                         <i class="fas fa-shopping-cart"></i>
                         <p style="margin-right:22px; margin-top:-1px;">0</p>
                         <span class="ca">Cart</span>
@@ -83,7 +82,7 @@
                 </div>
             </div>
         </div>
-        <div id="nav-flyout-icp" class="nav-coreFlyout nav-flyout" style="position: absolute; top: -5px;">
+        <div id="nav-flyout-icp" class="nav-coreFlyout nav-flyout" style="position: absolute; display: none; top: 53px; left: 1348px;" onmouseenter="mouseEnterFlexBox();" onmouseleave="mouseLeaveFlexBox();">
             <div class="nav-arrow" style="position: absolute; left: 53.375px;">
                 <div class="nav-arrow-inner"></div>
             </div>
