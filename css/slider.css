@@ -6,9 +6,13 @@
 }
 
 .slide img {
-    width: 1360px;
     height: 100%;
 }
+
+.slide {
+    width: 100%;
+}
+
 
 .container {
     position: relative;
@@ -17,10 +21,10 @@
 }
 
 .slider {
-    width: 100%;
     overflow: hidden;
     position: relative;
     height: 560px;
+    max-width: 1500px;
 }
 
 .image-box {
@@ -29,34 +33,43 @@
     position: absolute;
     animation: carousel 15s alternate infinite;
 }
+
+#desktop-banner {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 /* todo:slider fix button and animation to right only */
 @keyframes carousel {
     0% {
         left: 0;
     }
+
     20% {
         left: 0%;
     }
+
     24% {
-        left: -1360px;
+        left: -1500px;
     }
+
     50% {
-        left: -1360px;
+        left: -1500px;
     }
 
     54% {
-        left: calc(-1360*2px);
+        left: calc(-1500*2px);
     }
 
     80% {
-        left: calc(-1360*2px);
+        left: calc(-1500*2px);
     }
 
     84% {
-        left: calc(-1360*3px);
+        left: calc(-1500*3px);
     }
 
     100% {
-        left: calc(-1360*3px);
+        left: calc(-1500*3px);
     }
 }
