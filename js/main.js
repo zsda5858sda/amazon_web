@@ -4,24 +4,22 @@ var isMouseEnter = false;
 
 async function showNavCover(type) {
     isMouseEnter = true;
-    await delay(500);
+    await delay(200);
 
-    if (!isCover && isMouseEnter) {
-        var element = document.getElementById("nav-cover");
-        unfade(element);
-
+    if (isMouseEnter) {
+        if (!isCover) {
+            var element = document.getElementById("nav-cover");
+            unfade(element);
+        }
 
         switch (type) {
             case "lang":
                 document.getElementById("nav-flyout-icp").style.display = "block";
+                document.getElementById("nav-flyout-accountList").style.display = "none";
                 break;
             case "sign":
-                // document.getElementById("nav-flyout-icp").style.display = "block";
-                break;
-            case "orders":
-                // document.getElementById("nav-flyout-icp").style.display = "block";
-                break;
-            default:
+                document.getElementById("nav-flyout-icp").style.display = "none";
+                document.getElementById("nav-flyout-accountList").style.display = "block";
                 break;
         }
     }
@@ -29,13 +27,14 @@ async function showNavCover(type) {
 
 async function hideNavCover() {
     isMouseEnter = false;
-    await delay(500);
+    await delay(200);
 
     if (isCover && !isFlexBoxHover && !isMouseEnter) {
         var element = document.getElementById("nav-cover");
         fade(element);
 
         document.getElementById("nav-flyout-icp").style.display = "none";
+        document.getElementById("nav-flyout-accountList").style.display = "none";
     }
 }
 

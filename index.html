@@ -53,11 +53,11 @@
                             <i class="fas fa-caret-down"></i>
                         </div>
                     </div>
-                    <div class="sign" onmouseenter="hideNavCover('orders')">
+                    <div class="sign">
                         <span>Returns</span>
                         <span>& Orders</span>
                     </div>
-                    <div class="flex cart" id="cart" onmouseenter="hideNavCover('cart')">
+                    <div class="flex cart" id="cart">
                         <i class="fas fa-shopping-cart"></i>
                         <p style="margin-right:22px; margin-top:-1px;">0</p>
                         <span class="ca">Cart</span>
@@ -82,7 +82,71 @@
                 </div>
             </div>
         </div>
-        <div id="nav-flyout-icp" class="nav-coreFlyout nav-flyout" style="position: absolute; display: none; top: 53px; left: 1348px;" onmouseenter="mouseEnterFlexBox();" onmouseleave="mouseLeaveFlexBox();">
+        <div id="nav-flyout-accountList" class="nav-coreFlyout nav-flyout" style="display: none; position: absolute; top: 53px; left: 1367px;">
+            <div class="nav-arrow" style="position: absolute; left: 216px;">
+                <div class="nav-arrow-inner"></div>
+            </div>
+            <div class="nav-template nav-flyout-content">
+                <div id="nav-al-container">
+                    <div id="nav-al-signin">
+                        <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility"><a
+                                href="https://www.amazon.com/-/zh_TW/ap/signin?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F%26tag%3Dgoogleglobalp-20%26ref%3Dnav_signin%26adgrpid%3D82342659060%26hvpone%3D%26hvptwo%3D%26hvadid%3D585475370855%26hvpos%3D%26hvnetw%3Dg%26hvrand%3D16683428477247025445%26hvqmt%3De%26hvdev%3Dc%26hvdvcmdl%3D%26hvlocint%3D%26hvlocphy%3D1012825%26hvtargid%3Dkwd-10573980%26hydadcr%3D2246_13468515%26gclid%3DCjwKCAiAkfucBhBBEiwAFjbkr9g0q9sEvab-Agoi-aUk8NhiXtrThVtTKhD_l9a0lRA4rf5IBhhf-RoCY28QAvD_BwE&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;"
+                                rel="nofollow" class="nav-action-button" data-nav-role="signin"
+                                data-nav-ref="nav_signin"><span class="nav-action-inner">登入</span></a>
+                            <div id="nav-flyout-ya-newCust"
+                                class="nav_pop_new_cust nav-flyout-content nav-flyout-accessibility">新客戶？ <a
+                                    href="https://www.amazon.com/-/zh_TW/ap/register?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26adgrpid%3D82342659060%26gclid%3DCjwKCAiAkfucBhBBEiwAFjbkr9g0q9sEvab-Agoi-aUk8NhiXtrThVtTKhD_l9a0lRA4rf5IBhhf-RoCY28QAvD_BwE%26hvadid%3D585475370855%26hvdev%3Dc%26hvdvcmdl%3D%26hvlocint%3D%26hvlocphy%3D1012825%26hvnetw%3Dg%26hvpone%3D%26hvpos%3D%26hvptwo%3D%26hvqmt%3De%26hvrand%3D16683428477247025445%26hvtargid%3Dkwd-10573980%26hydadcr%3D2246_13468515%26ref%3Dpd_sl_7nnedyywlk_e%26tag%3Dgoogleglobalp-20%26ref_%3Dnav_newcust&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;"
+                                    rel="nofollow" class="nav-a">從這裡開始。</a></div>
+                        </div>
+                    </div>
+                    <div id="nav-al-wishlist"
+                        class="nav-al-column nav-tpl-itemList nav-flyout-content nav-flyout-accessibility">
+                        <div class="nav-title" id="nav-al-title">您的清單</div><a
+                            href="/-/zh_TW/hz/wishlist/ls?triggerElementID=createList&amp;ref_=nav_ListFlyout_navFlyout_createList_lv_redirect"
+                            class="nav-link nav-item"><span class="nav-text">建立清單</span></a> <a
+                            href="/-/zh_TW/registries?ref_=nav_ListFlyout_find" class="nav-link nav-item"><span
+                                class="nav-text">尋找清單或註冊</span></a> <a
+                            href="/-/zh_TW/hz/charitylist/homepage?ref_=nav_ListFlyout_smi_se_ya_lll_ll"
+                            class="nav-link nav-item"><span class="nav-text">AmazonSmile 慈善清單</span></a>
+                    </div>
+                    <div id="nav-al-your-account"
+                        class="nav-al-column nav-template nav-flyout-content nav-tpl-itemList nav-flyout-accessibility">
+                        <div class="nav-title">您的帳戶</div><a
+                            href="/-/zh_TW/gp/css/homepage.html?ref_=nav_AccountFlyout_ya"
+                            class="nav-link nav-item"><span class="nav-text">帳戶：</span></a> <a
+                            id="nav_prefetch_yourorders"
+                            href="/-/zh_TW/gp/css/order-history?ref_=nav_AccountFlyout_orders"
+                            class="nav-link nav-item"><span class="nav-text">訂單</span></a> <a
+                            href="/-/zh_TW/gp/yourstore?ref_=nav_AccountFlyout_recs" class="nav-link nav-item"><span
+                                class="nav-text">推薦</span></a> <a
+                            href="/-/zh_TW/gp/history?ref_=nav_AccountFlyout_browsinghistory"
+                            class="nav-link nav-item"><span class="nav-text">瀏覽歷史記錄</span></a> <a
+                            href="/-/zh_TW/gp/video/watchlist?ref_=nav_AccountFlyout_ywl"
+                            class="nav-link nav-item"><span class="nav-text">監看清單</span></a> <a
+                            href="/-/zh_TW/gp/video/library?ref_=nav_AccountFlyout_yvl" class="nav-link nav-item"><span
+                                class="nav-text">影片購買與租賃</span></a> <a
+                            href="/-/zh_TW/gp/kindle/ku/ku_central?ref_=nav_AccountFlyout_ku"
+                            class="nav-link nav-item"><span class="nav-text">Kindle Unlimited (Kindle
+                                電子書包月服務)</span></a> <a
+                            href="/hz/mycd/myx?pageType=content&amp;ref_=nav_AccountFlyout_myk"
+                            class="nav-link nav-item"><span class="nav-text">內容與裝置</span></a> <a
+                            href="/-/zh_TW/gp/subscribe-and-save/manager/viewsubscriptions?ref_=nav_AccountFlyout_sns"
+                            class="nav-link nav-item"><span class="nav-text">定期購聰明省商品</span></a> <a
+                            href="/hz5/yourmembershipsandsubscriptions?ref_=nav_AccountFlyout_digital_subscriptions"
+                            class="nav-link nav-item"><span class="nav-text">會員資格與訂閱</span></a> <a
+                            href="https://music.amazon.com?ref=nav_youraccount_cldplyr" class="nav-link nav-item"><span
+                                class="nav-text">音樂圖書館</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-flyout-buffer-left"></div>
+            <div class="nav-flyout-buffer-right"></div>
+            <div class="nav-flyout-buffer-top"></div>
+            <div class="nav-flyout-buffer-bottom"></div>
+        </div>
+        <div id="nav-flyout-icp" class="nav-coreFlyout nav-flyout"
+            style="position: absolute; display: none; top: 53px; left: 1348px;" onmouseenter="mouseEnterFlexBox();"
+            onmouseleave="mouseLeaveFlexBox();">
             <div class="nav-arrow" style="position: absolute; left: 53.375px;">
                 <div class="nav-arrow-inner"></div>
             </div>
@@ -141,9 +205,9 @@
                             class="icp-flyout-change">Change</a></span> </span>
                 <div class="nav-divider icp-flyout-curr-divider"></div> <span
                     class="                                    nav-item"> <span class="nav-text">
-                        <img src="images/usflag.jpg" class="icp-flyout-flag icp-flyout-flag-us"></img>You are shopping on <span
-                            style="unicode-bidi:isolate; direction:ltr;" dir="ltr">Amazon.com</span></span> </span> <a
-                    href="/customer-preferences/country?ref_=icp_lop_mop_chg_ais&amp;preferencesReturnUrl=/"
+                        <img src="images/usflag.jpg" class="icp-flyout-flag icp-flyout-flag-us"></img>You are shopping
+                        on <span style="unicode-bidi:isolate; direction:ltr;" dir="ltr">Amazon.com</span></span> </span>
+                <a href="/customer-preferences/country?ref_=icp_lop_mop_chg_ais&amp;preferencesReturnUrl=/"
                     class="nav-link                                    nav-item" id="icp-flyout-mkt-change"> <span
                         class="nav-text">
                         <div class="icp-mkt-change-lnk">Change country/region.</div>
