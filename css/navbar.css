@@ -126,10 +126,11 @@ i {
 
 .input input {
     outline: none;
-    width: 80%;
+    width: 88%;
     font-size: 16px;
-    padding: 10px 2px;
+    padding: 10px;
     border: none;
+    z-index: 2;
 }
 
 .input .fa-search {
@@ -540,4 +541,23 @@ a, a:link, a:visited {
     color: #111;
     display: block;
     text-align: center;
+}
+
+.nav-search-dropdown {
+    position: absolute;
+    display: block;
+    top: -1px;
+    left: 263px;
+    height: 42px;
+    width: auto;
+    font-family: inherit;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    visibility: visible;
+    border: 0;
+    line-height: 35px;
 }

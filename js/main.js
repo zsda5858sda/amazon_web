@@ -52,3 +52,9 @@ function mouseLeaveFlexBox() {
     isFlexBoxHover = false;
     hideNavCover();
 }
+
+function changeSearchType(e) {
+    const selectedType = e.options[e.selectedIndex].text;
+    document.getElementById("nav-search-label-id").innerText = selectedType;
+    showNavCover();
+}
