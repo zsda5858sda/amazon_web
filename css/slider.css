@@ -73,3 +73,34 @@
         left: calc(-1500*3px);
     }
 }
+
+.a-carousel-col {
+    position: absolute;
+    width: 80px;
+    max-height: 250px;
+    height: 100%;
+}
+
+.a-carousel-right {
+    right: 0;
+}
+
+.a-carousel-goto-nextpage, .a-carousel-goto-prevpage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    outline: 0;
+    border-radius: 5px;
+}
+
+.a-icon {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    background-size: 68px 52px;
+    font-size: 42px;
+    color: black;
+    outline: 0;
+}
