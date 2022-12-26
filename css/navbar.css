@@ -76,8 +76,9 @@ i {
 }
 
 #nav-text {
-    padding: 2px;
-    margin: 2px;
+    padding-top: 0px;
+    margin-top: 2px;
+    margin: 0px;
     width: 60px;
     font-size: 12px;
 }
