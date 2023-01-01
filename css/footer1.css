@@ -1,0 +1,81 @@
+.footer {
+    width: 100%;
+    height: 510px;
+    bottom: 0;
+}
+
+.guide {
+    height: 160px;
+    width: 100%;
+    background-color: white;
+    padding: 60px;
+}
+
+.guide .guide-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.guide .guide-container p{
+    margin-top: 4px;
+    font-size: 14px;
+}
+.guide .guide-container button{
+    width: 260px;
+    border: none;
+    background-color: #ffe093;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(to bottom,#f8e3ad,#EEBA37);
+    background: -moz-linear-gradient(top,#f8e3ad,#EEBA37);
+    background: -webkit-linear-gradient(top,#f8e3ad,#EEBA37);
+    background: -o-linear-gradient(top,#f8e3ad,#EEBA37);
+    background: -ms-linear-gradient(top,#f8e3ad,#EEBA37);
+
+}
+.detail {
+    background-color: #232f3e;
+    height: 350px;
+}
+
+.table {
+    margin: 0 100px;
+    padding-left: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.table div {
+    width: 250px;
+}
+
+.t-head {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.table li {
+    color: rgb(223, 221, 221);
+    padding-top: 10px;
+    font-weight: lighter;
+    font-size: 14px;
+    list-style: none;
+    cursor: pointer;
+}
+.table li:hover{
+    text-decoration: underline;
+}
+#starthere{
+    color: #007185;
+    cursor: pointer;
+}
+#starthere:hover{
+    color: rgb(175, 5, 5);
+    text-decoration: underline;
+}
