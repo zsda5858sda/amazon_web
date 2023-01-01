@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    height: 510px;
+    height: 530px;
     bottom: 0;
 }
 
@@ -10,7 +10,6 @@
     background-color: white;
     padding: 60px;
 }
-
 .guide .guide-container {
     display: flex;
     flex-direction: column;
