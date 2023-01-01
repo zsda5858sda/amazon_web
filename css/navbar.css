@@ -375,6 +375,11 @@ i {
     height: 18px;
     background: url(https://m.media-amazon.com/images/S/sash/fe2UeLQmJ11kKHN.png);
     background-position: -75px -2px;
+    cursor: pointer;
+}
+.icp-radio:hover{
+    background-color: orange;
+    color: orange;
 }
 
 .nav-divider {
@@ -413,6 +418,7 @@ a, a:link, a:visited {
     margin-left: 25px;
     margin-top: 10px;
     color: #0066C0;
+    cursor: pointer;
 }
 
 .nav-flyout .nav-arrow {
