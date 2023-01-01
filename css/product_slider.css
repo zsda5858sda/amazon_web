@@ -1,0 +1,81 @@
+.today_deals_container {
+    padding: 18px;
+    margin: 20px;
+    /* box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.1),
+    1px 1px 5px rgba(0, 0, 0, 0.1); */
+    background-color: #fff;
+    height: 280px;
+    align-self: center;
+}
+
+.today_deals_heading {
+    display: flex;
+    align-self: center;
+    padding-left: 4px;
+}
+
+.deals_heading {
+    font-size: 22px;
+}
+
+.today_deals_heading p a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.today_deals_heading p a:hover {
+    text-decoration: underline;
+    color: rgb(171, 30, 30);
+
+}
+
+.today_deals_p {
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+.today_deals_product_container {
+    height: 280px;
+    cursor: pointer;
+}
+
+.today_deals_product_list {
+    display: flex;
+    overflow: hidden;
+}
+
+.today_deals_product_item {
+    margin: 20px;
+    padding: 0 20px;
+    min-width: 180px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+.today_deals_product_item img{
+    display: flex;
+}
+
+.today_deals_btn_container{
+    position: absolute;
+    padding-left: 5px;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    opacity :0.6;
+    z-index: 10;
+}
+.today_deals_btn{
+    color:black;
+    padding: 40px 15px;
+    font: 30px #000;
+    border: none;
+    cursor: pointer;
+}
+.fa-angle{
+    color: #000;
+    font-size: 25px;
+}

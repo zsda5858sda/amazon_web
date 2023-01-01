@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/product_slider.css">
     <script src="https://kit.fontawesome.com/be1d35bdaa.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="js/product_slider.js" type="module"></script>
     <script src="js/animation.js"></script>
 </head>
 
@@ -87,11 +89,11 @@
                             <i class="fas fa-caret-down"></i>
                         </div>
                     </div>
-                    <div class="sign">
+                    <div class="sign" onmouseenter="hideNavCover()">
                         <span>Returns</span>
                         <span>& Orders</span>
                     </div>
-                    <div class="flex cart" id="cart">
+                    <div class="flex cart" id="cart" onmouseenter="hideNavCover()">
                         <i class="fas fa-shopping-cart"></i>
                         <p style="margin-right:22px; margin-top:-1px;">0</p>
                         <span class="ca">Cart</span>
@@ -109,8 +111,8 @@
                     <ul>
                         <li>Today's Deals</li>
                         <li>Customer Service</li>
-                        <li>Registry</li>
                         <li>Gift Cards</li>
+                        <li>Registry</li>
                         <li>Sell</li>
                     </ul>
                 </div>
@@ -327,7 +329,8 @@
             <div class="card-product box-c">
                 <h3>FREE Shipping to Taiwan</h3>
                 <div>
-                    <img src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Projects/JumpIn/379x304._SY304_CB449506705_.jpg">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Projects/JumpIn/379x304._SY304_CB449506705_.jpg">
                 </div>
                 <button class="card-product-btn">On eligible orders over USD 60</button>
             </div>
@@ -365,7 +368,8 @@
                     <button>Sign in Securely</button>
                 </div>
                 <div>
-                    <img src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2020/October/Fuji_D2_45M_en_US_1x._CB418309979_.jpg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2020/October/Fuji_D2_45M_en_US_1x._CB418309979_.jpg"
+                        style="cursor: pointer;">
                 </div>
             </div>
         </div>
@@ -375,7 +379,8 @@
             <div class="card-product box-c">
                 <h3>Get fit at home</h3>
                 <div>
-                    <img src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/events/GFAH/GWDesktop_SingleImageCard_fitathome_1x._SY304_CB434924743_.jpg">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/events/GFAH/GWDesktop_SingleImageCard_fitathome_1x._SY304_CB434924743_.jpg">
                 </div>
                 <button class="card-product-btn">Explore now</button>
             </div>
@@ -383,7 +388,8 @@
             <div class="card-product box-c">
                 <h3>Dresses</h3>
                 <div>
-                    <img src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/Fuji_dash_dress_1X._SY304_CB626369146_.jpg">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/Fuji_dash_dress_1X._SY304_CB626369146_.jpg">
                 </div>
                 <button class="card-product-btn">Shop now</button>
             </div>
@@ -391,7 +397,8 @@
             <div class="card-product box-c">
                 <h3>Electronics</h3>
                 <div>
-                    <img src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg">
                 </div>
                 <button class="card-product-btn">See more</button>
             </div>
@@ -399,11 +406,12 @@
             <div class="card-product box-c">
                 <h3>Health & Personal Care</h3>
                 <div>
-                    <img src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg">
                 </div>
                 <button class="card-product-btn">Shop now</button>
             </div>
-            
+
         </div>
         <!--4_Block LINE 3 -->
         <div class="card-product-container container">
@@ -411,7 +419,8 @@
             <div class="card-product box-c">
                 <h3>New arrivals in Toys</h3>
                 <div>
-                    <img src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Toys_1X._SY304_CB639759658_.jpg">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Toys_1X._SY304_CB639759658_.jpg">
                 </div>
                 <button class="card-product-btn">Shop now</button>
             </div>
@@ -419,7 +428,8 @@
             <div class="card-product box-c">
                 <h3>For your Fitness Needs</h3>
                 <div>
-                    <img src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Fitness_1X._SY304_CB639748186_.jpg">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Fitness_1X._SY304_CB639748186_.jpg">
                 </div>
                 <button class="card-product-btn">Shop now</button>
             </div>
@@ -454,60 +464,32 @@
             <div class="card-product box-c text-b">
                 <h3>Shop activity trackers and<br>smartwatches</h3>
                 <div>
-                    <img src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg">
+                    <img
+                        src="https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg">
                 </div>
                 <button class="card-product-btn">Shop now</button>
             </div>
-            
+
         </div>
+
+        <section class="today_deals_container">
+            <div class="today_deals_btn_container">
+                <button class="today_deals_btn" id="today_deal_btn_prev">
+                    <i class="fa-solid fa-angle-left fa-angle"></i>
+                </button>
+                <button class="today_deals_btn"  id="today_deal_btn_next">
+                    <i class="fa-solid fa-angle-right fa-angle"></i>
+                </button>
+            </div>
+            <div class="today_deals_heading">
+                <h2 class="deals_heading">Top Sellers in Books for you</h1>
+                    <p class="today_deals_p"><a href="#">shop now</a></p>
+            </div>
+            <div class="today_deals_product_container">
+                <div class="today_deals_product_list"></div>
+            </div>
+        </section>
     </main>
-     <!-- <section class="sec-1">
-        <div class="conatiner">
-            <div class="container-1">
-                <div class="product-comp">
-                    <div class="box">
-                        <h3>Mix and mingle Cyber<br>Monday deals</h3>
-                        <div class="box-a">
-                            <div>
-                                <img
-                                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/T5/GW/DQC/BFCM22_DQC_T5_XCAT_01_HOME_1X._SY116_CB604967976_.jpg">
-                                    <span>Home</span>
-                                    <img
-                                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/T5/GW/DQC/BFCM22_DQC_T5_XCAT_01_SMART_HOME_1X._SY116_CB606693756_.jpg">
-                                    <span>Smart Home</span>
-                                    <img
-                                        src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/T5/GW/DQC/BFCM22_DQC_T5_XCAT_01_VIDEO_GAMES_1X._SY116_CB604925115_.jpg">
-                                    <span>PCs & Gaming</span>
-                                    <img
-                                    src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/T5/GW/DQC/BFCM22_DQC_T5_XCAT_01_FASHION_1X._SY116_CB606693756_.jpg">
-                                <span>Fashion</span>
-                            </div>
-                        </div>
-                        <div>intro</div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider">
-                <div class="image-box">
-                    <div class="slide">
-                        <img src="https://m.media-amazon.com/images/I/71tIrZqybrL._SX3000_.jpg">
-                    </div>
-                    <div class="slide">
-                        <img src="https://m.media-amazon.com/images/I/61TD5JLGhIL._SX3000_.jpg">
-                    </div>
-                    <div class="slide">
-                        <img src="https://m.media-amazon.com/images/I/61jovjd+f9L._SX3000_.jpg">
-                    </div>
-                    <div class="slide">
-                        <img src="https://m.media-amazon.com/images/I/71CFB7VgeuL._SX3000_.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    </section>  -->
-
-
 </body>
 
 </html>
