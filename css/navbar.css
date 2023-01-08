@@ -375,11 +375,30 @@ i {
     height: 18px;
     background: url(https://m.media-amazon.com/images/S/sash/fe2UeLQmJ11kKHN.png);
     background-position: -75px -2px;
+    cursor: pointer;    
+}
+
+.icp-radio.icp-radio-active, a:hover .icp-radio.icp-radio-active {
+    background-position: -98px -2px;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #C7511F;
+}
+
+a:hover .icp-radio {
+    background-position: -123px -2px;
+}
+
+.nav-tpl-discoveryPanelList .nav-link, .nav-tpl-discoveryPanelSummary .nav-link, .nav-tpl-itemList .nav-link {
     cursor: pointer;
 }
-.icp-radio:hover{
-    background-color: orange;
-    color: orange;
+
+.nav-tpl-discoveryPanelList .nav-link:focus .nav-text, .nav-tpl-discoveryPanelList .nav-link:hover .nav-text, .nav-tpl-discoveryPanelSummary .nav-link:focus .nav-text, .nav-tpl-discoveryPanelSummary .nav-link:hover .nav-text, .nav-tpl-itemList .nav-link:focus .nav-text, .nav-tpl-itemList .nav-link:hover .nav-text {
+    color: #e47911;
+    text-decoration: underline;
 }
 
 .nav-divider {
